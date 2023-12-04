@@ -22,18 +22,18 @@ const RegisterForm = (props: any) => {
     }
 
     try {
-      const res = await registerAPI({
-        userName: data.userName,
-        password: data.password,
-        code: data.code,
-        uuid: svgCode.uuid,
-      });
-      if (res.data.code !== 200) {
-        message.error(res.data.message);
-        getCaptchaImage();
-        return;
-      }
-      message.success(res.data.message);
+      // const res = await registerAPI({
+      //   userName: data.userName,
+      //   password: data.password,
+      //   code: data.code,
+      //   uuid: svgCode.uuid,
+      // });
+      // if (res.data.code !== 200) {
+      //   message.error(res.data.message);
+      //   getCaptchaImage();
+      //   return;
+      // }
+      // message.success(res.data.message);
       changeIsLogin({ userName: data.userName, password: data.password }, 'regOk');
       // 注册成功后清空 registerList 的值
       changeIsLogin({ userName: '', password: '', password2: '' }, 'reg');
@@ -114,8 +114,8 @@ const RegisterForm = (props: any) => {
             name="code"
             rules={[
               {
-                required: true,
-                message: '请输入验证码!',
+                // required: true,
+                // message: '请输入验证码!',
               },
             ]}
           >

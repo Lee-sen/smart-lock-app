@@ -7,7 +7,7 @@ import useStore from '@/store';
 import { observer } from 'mobx-react-lite';
 import { uploadAvatarAPI, getProfileAPI } from '@/api/modules/user';
 import avatarDef from '@/assets/images/avatar.jpeg';
-import SvgIcon from '@/components/SvgIcon';
+// import SvgIcon from '@/components/SvgIcon';
 import dayjs from 'dayjs';
 
 // 组件

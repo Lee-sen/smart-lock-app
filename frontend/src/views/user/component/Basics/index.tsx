@@ -37,11 +37,11 @@ const Basics = () => {
 
   const onFinish = async (values: IUserProp) => {
     try {
-      const res = await updateUserInfoAPI(values);
-      message.success(res.data.message);
-      // 更新 userInfo 的信息
-      const userRes = await getUserAPI();
-      setUserInfo(userRes.data.result);
+      // const res = await updateUserInfoAPI(values);
+      // message.success(res.data.message);
+      // // 更新 userInfo 的信息
+      // const userRes = await getUserAPI();
+      // setUserInfo(userRes.data.result);
     } catch (error) {}
   };
 

@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkleno_admin=self.webpackChunkleno_admin||[]).push([[345,3138],{345:function(e,n,a){a.r(n),n.default={"generate-mes":"F4oPwdKy"}}}]);

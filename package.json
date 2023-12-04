@@ -1,10 +1,10 @@
 {
-  "name": "leno-admin-electron",
+  "name": "smart-lock-front",
   "version": "1.0.0",
-  "description": "A fast, desktop software development framework",
+  "description": "物联网智能锁",
   "main": "main.js",
   "scripts": {
-    "start": "electron . ",
+    "start": "electron .",
     "dev": "electron . --env=local",
     "reload": "nodemon --config ./electron/config/nodemon.json",
     "test": "set DEBUG=* && electron . --env=local",
@@ -38,7 +38,7 @@
     "electron-egg",
     "ElectronEgg"
   ],
-  "author": "哆啦好梦, Inc <530353222@qq.com>",
+  "author": "macrona",
   "license": "Apache",
   "devDependencies": {
     "@electron/rebuild": "^3.2.13",

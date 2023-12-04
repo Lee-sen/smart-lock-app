@@ -2,7 +2,7 @@
 import '@/assets/style/App.css';
 import { AuthRouter } from '@/routes/utils/routers';
 /* 全局 Loading */
-import Loading from '@/components/Loading';
+// import Loading from '@/components/Loading';
 import { Router } from '@/routes/index';
 
 const App = () => (
@@ -12,11 +12,11 @@ const App = () => (
     }}
   >
     {/* 注册路由 */}
-    <AuthRouter>
+    {/* <AuthRouter> */}
       <Router />
-    </AuthRouter>
+    {/* </AuthRouter> */}
     {/* 全局 Loaing */}
-    <Loading />
+    {/* <Loading /> */}
   </div>
 );
 

@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import SvgIcon from '@/components/SvgIcon';
+// import SvgIcon from '@/components/SvgIcon';
 import { IcaptchaImageType, ILogin } from '@/type';
 import { captchaImageAPI } from '@/api/modules/user';
 import classes from './index.module.scss';
@@ -34,7 +34,9 @@ const Login = () => {
         data: { result },
       } = await captchaImageAPI();
       setSvgCode(result);
-    } catch (error) {}
+    } catch (error) {
+      console.log(error,'没有图片');
+    }
   };
 
   useEffect(() => {

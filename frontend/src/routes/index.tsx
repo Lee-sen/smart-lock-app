@@ -7,10 +7,12 @@ import { RouteType } from '@/type/modules/system/menu';
 import { toJS } from 'mobx';
 
 /* 主干路由页面 */
+// import Home from '@/views/home';
 import Login from '@/views/login';
-import Page404 from '@/views/errMessage/404';
-import Page500 from '@/views/errMessage/500';
-import Layout from '@/Layout';
+import Admin from '@/views/admin';
+// import Page404 from '@/views/errMessage/404';
+// import Page500 from '@/views/errMessage/500';
+// import Layout from '@/Layout';
 
 /**
  * 路由配置项
@@ -28,31 +30,50 @@ import Layout from '@/Layout';
  *   icon:'svg-name'      // 设置该路由的图标，对应路径 src/assets/icons/svg
  * }
  */
-
+// const child = [
+//   {
+//     path: '/1',  
+//     component: <Page404 />,
+//     meta: { title: '1' }
+//   },
+//   {
+//     path: '/1',  
+//     component: <Page404 />,
+//     meta: { title: '1' }
+//   },{
+//     path: '/1',  
+//     component: <Page404 />,
+//     meta: { title: '1' }
+//   },{
+//     path: '/1',  
+//     component: <Page404 />,
+//     meta: { title: '1' }
+//   },
+// ];
 export const rootRouter = [
   // 所有的动态路由都将渲染到该主菜单上
-  {
-    element: <Layout />,
-    children: [] as RouteType[],
-  },
+  // {
+  //   element: <Layout />,
+  //   children: child as RouteType[],
+  // },
+  
   {
     path: '/login',
     element: <Login />,
     meta: { title: '登录页' },
   },
   {
-    path: '/404',
-    element: <Page404 />,
+    path: '/admin',
+    element: <Admin />,
     meta: { title: '404页面' },
   },
-  {
-    path: '/500',
-    element: <Page500 />,
-    meta: { title: '500页面' },
-  },
+  // {
+  //   path: '/home',
+  //   element: <Home />,
+  // },
   {
     path: '/',
-    element: <Navigate to={HOME_URL} />,
+    element: <Navigate to={'/admin'} />,
   },
 ];
 
@@ -63,9 +84,10 @@ export const Router = observer(() => {
   } = useStore();
 
   useEffect(() => {
-    rootRouter[0].children = toJS(dynamicRouters);
+    // rootRouter[0].children = toJS(dynamicRouters);
     setRoute([...rootRouter]);
+    console.log(route, rootRouter);
   }, [dynamicRouters]);
-
+  
   return useRoutes(route);
 });

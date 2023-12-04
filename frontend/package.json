@@ -1,7 +1,7 @@
 {
-  "name": "leno-admin",
+  "name": "macrona-lock-admin",
   "version": "1.0.0",
-  "description": "使用React18+webpack5构建基础的后台管理框架（包含：登录权限、用户角色管理，路由按钮权限及动态添加，字典管理，区域岗位管理，代码生成等）",
+  "description": "使用React18+webpack5构建智能锁后台管理，包括app与锁串口通信、钥匙管理、锁芯管理、日志功能等）",
   "main": "index.js",
   "scripts": {
     "dev": "cross-env NODE_ENV=development webpack-dev-server -c build/webpack.dev.js",
@@ -121,6 +121,7 @@
     "antd": "^4.24.5",
     "antd-img-crop": "^4.8.0",
     "axios": "^0.27.2",
+    "create-react-context": "^0.3.0",
     "dayjs": "^1.11.6",
     "echarts": "^5.4.2",
     "echarts-for-react": "^3.0.2",
@@ -128,6 +129,7 @@
     "mobx": "^6.6.1",
     "mobx-persist-store": "^1.0.6",
     "mobx-react-lite": "^3.4.0",
+    "mockjs": "^1.1.0",
     "nprogress": "^0.2.0",
     "react": "^18.2.0",
     "react-activation": "^0.12.4",

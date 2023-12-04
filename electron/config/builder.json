@@ -1,11 +1,11 @@
 {
-  "productName": "leno-admin-electron",
-  "appId": "com.leno-admin-electron.ee",
-  "copyright": "© 2023 我隔这敲代码呢 Technology Co., Ltd.",
+  "productName": "smart-lock",
+  "appId": "com.smart-lock.ee",
+  "copyright": "© 2023 macrona Technology Co., Ltd.",
   "directories": {
     "output": "out"
   },
-  "asar": true,
+  "asar": false,
   "files": [
     "**/*",
     "!frontend/",
@@ -26,7 +26,7 @@
     "installerHeaderIcon": "build/icons/icon.ico",
     "createDesktopShortcut": true,
     "createStartMenuShortcut": true,
-    "shortcutName": "leno-admin-electron"
+    "shortcutName": "macrona-smart-lock"
   },
   "mac": {
     "icon": "build/icons/icon.icns",
@@ -35,7 +35,7 @@
     "hardenedRuntime": false
   },
   "win": {
-    "icon": "build/icons/icon.ico",
+    "icon": "build/icons/icon1.icns",
     "artifactName": "${productName}-${os}-${version}-${arch}.${ext}",
     "target": [
       {

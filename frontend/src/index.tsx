@@ -1,3 +1,4 @@
+import '../mock/testMock.js';
 import { BrowserRouter, HashRouter } from 'react-router-dom';
 import { ConfigProvider } from 'antd';
 import App from '@/App';

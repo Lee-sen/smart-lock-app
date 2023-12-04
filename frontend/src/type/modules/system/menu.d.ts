@@ -28,7 +28,7 @@ export interface getRouterApiType {
 // 菜单类型
 export interface menusType {
   path: string;
-  component?: string;
+  component?: ReactNode;
   query?: string;
   visible: string;
   status: string;

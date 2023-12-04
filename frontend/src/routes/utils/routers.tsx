@@ -23,32 +23,32 @@ export const AuthRouter: any = (props: { children: RouteType }) => {
   } = useStore();
 
   // 第一步 判断有无 token
-  if (getToken()) {
-    if (!token) setToken(getToken());
+  // if (getToken()) {
+    // if (!token) setToken(getToken());
 
     // 第二步 判断是否前往login页面，等于跳转 '/', 不等于则继续判断
     if (pathname === '/login') {
       return <Navigate to="/" replace />;
     }
     // 第三步 判断是否拿到用户个人信息、路由、权限，没拿到则进行axios请求数据，进行信息存储及权限路由渲染，否则直接放行
-    if (Object.keys(userInfo).length < 1 || !userInfo) {
-      // 获取用户个人信息
-      const getMes = async () => {
-        try {
-          const userMes = await getUserAPI();
-          setUserInfo(userMes.data.result as IgetInfoType);
+    // if (Object.keys(userInfo).length < 1 || !userInfo) {
+    //   // 获取用户个人信息
+    //   const getMes = async () => {
+    //     try {
+    //       const userMes = await getUserAPI();
+    //       setUserInfo(userMes.data.result as IgetInfoType);
 
-          const {
-            data: { result },
-          } = await getRoutersAPI();
-          setRouters(result as RouteType[]);
-        } catch (error) {}
-      };
-      getMes();
-    }
+    //       const {
+    //         data: { result },
+    //       } = await getRoutersAPI();
+    //       setRouters(result as RouteType[]);
+    //     } catch (error) {}
+    //   };
+    //   getMes();
+    // }
 
-    return props.children;
-  }
+    // return props.children;
+  // }
   if (whitePaths.includes(pathname)) {
     return props.children;
   }
