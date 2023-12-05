@@ -102,29 +102,29 @@ const Admin = () => {
                                 {
                                     key: '1',
                                     icon: <UserOutlined />,
-                                    label: '锁芯设置',
+                                    label: '串口连接',
 
                                 },
                                 {
                                     key: '2',
                                     icon: <VideoCameraOutlined />,
-                                    label: '人员设置',
+                                    label: '锁芯设置',
+                                },
+                                {
+                                    key: '3',
+                                    icon: <UploadOutlined />,
+                                    label: '钥匙设置',
+                                },
+                                {
+                                    key: '4',
+                                    icon: <UploadOutlined />,
+                                    label: '日志操作',
                                 },
                                 // {
-                                //     key: '3',
+                                //     key: '5',
                                 //     icon: <UploadOutlined />,
-                                //     label: '区域设置',
-                                // },
-                                // {
-                                //     key: '4',
-                                //     icon: <UploadOutlined />,
-                                //     label: '巡检地点设置',
-                                // },
-                                {
-                                    key: '5',
-                                    icon: <UploadOutlined />,
-                                    label: '串口操作',
-                                }
+                                //     label: '串口操作',
+                                // }
                             ]}
                         onClick={(e) => handleClickMenu(e)}
                     />
