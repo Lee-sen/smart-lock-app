@@ -1,3 +1,4 @@
+import { Button } from 'antd';
 import {useState} from 'react'
 
 export const KeyAdmin = () => {
@@ -5,6 +6,7 @@ export const KeyAdmin = () => {
     return (
         <div className="key-admin">
             key
+            <Button type='primary' onClick={() => setLockId(lockId + 1)}>锁芯id</Button>
         </div>
     )
 }
