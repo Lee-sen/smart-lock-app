@@ -120,11 +120,6 @@ const Admin = () => {
                                     icon: <UploadOutlined />,
                                     label: '日志操作',
                                 },
-                                // {
-                                //     key: '5',
-                                //     icon: <UploadOutlined />,
-                                //     label: '串口操作',
-                                // }
                             ]}
                         onClick={(e) => handleClickMenu(e)}
                     />
