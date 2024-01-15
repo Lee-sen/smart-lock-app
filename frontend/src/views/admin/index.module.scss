@@ -1,0 +1,36 @@
+.admin-container {
+    height: 100%;
+    width: 100%;
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+    margin: 20px;
+    :global{
+        .ant-btn{
+            margin: 20px;
+        }
+    }
+    .com-admin {
+        // .btn-com-collect {
+        //     margin: 20px;   
+        // }
+    }
+
+    .lock-admin {
+        // margin: 20px;
+        // padding: 20px;
+
+    }
+
+    .key-admin {
+        // margin: 20px;
+        // padding: 20px;
+
+    }
+}

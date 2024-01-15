@@ -1,0 +1,122 @@
+$theme-color:#b2aeae;
+
+.login-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  width: 100vw;
+  min-height: 100vh;
+
+  .svg-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -10;
+    width: 100vw;
+    height: 100vh;
+    transform: scale(1.1);
+  }
+
+  .login-sencond-box {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    overflow: hidden;
+    padding: 0 4vw 0 0;
+    width: 96vw;
+    height: 94vh;
+    border-radius: 10px;
+    background-color: hsl(0deg 0% 100% / 80%);
+  }
+
+  /* 左边图像 */
+  .left-img {
+    display: flex;
+    flex: 12;
+    justify-content: center;
+    align-items: center;
+
+    .react-logo {
+      width: 16vw;
+      height: 16vw;
+      background: url('@/assets/images/logo.png') no-repeat center;
+      background-size: 65%;
+    }
+
+    .project-name {
+      padding: 20px 0 0;
+      font-size: 3.5vw;
+      font-weight: 700;
+    }
+  }
+
+  /* LOGIN */
+  .login-box {
+    padding: 5vh 4vh;
+    width: 500px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 2px 2px 20px 2px #c7cdcfa3;
+
+    .login-form {
+      position: relative;
+      overflow: hidden;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    /* login title byte */
+    .title-container {
+      position: relative;
+
+      .title {
+        margin-bottom: 15px;
+        font-size: 30px;
+        font-weight: 700;
+        color: #b2aeae;
+      }
+    }
+
+    /* login 按钮 */
+    .login-btn {
+      margin: 0 30px 0 0;
+      border-radius: 2px;
+    }
+
+    /* 局部修改 antd 样式 */
+    :global {
+
+      .ant-input-affix-wrapper,
+      .ant-input {
+        color: $theme-color;
+        background-color: transparent !important;
+      }
+
+      .ant-form-item-control-input-content {
+        display: flex;
+        align-items: center;
+      }
+
+      .ant-input-affix-wrapper {
+        line-height: 2.6;
+      }
+
+      .anticon {
+        color: $theme-color;
+      }
+
+      .ant-input-affix-wrapper {
+        color: $theme-color;
+      }
+    }
+  }
+
+  /* 底部版权信息 */
+  .copyright {
+    position: fixed;
+    bottom: 4vh;
+    color: #686666;
+  }
+}
