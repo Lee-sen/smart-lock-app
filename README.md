@@ -9,3 +9,9 @@ npm run dev  进入界面开发
 npm run dev  进入后台开发
 npm run start  进入后台运行
 npm run build  打包
+### 重新打包步骤
+cd frontend:
+npm run build
+cd smart-lock-app:
+npm run rd 替换前端资源
+npm run build-w-64 打包成win64应用
