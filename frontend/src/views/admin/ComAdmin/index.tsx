@@ -1,12 +1,13 @@
-import { Button, Select } from 'antd';
+import { Button, Modal, Select } from 'antd';
 import { useState } from 'react'
 
-import classes from '../index.module.scss';
+import classes from './index.module.scss';
 
 export const ComAdmin = () => {
     const [lockId, setLockId] = useState(0);
     const handleClick = () => {
         console.log('handleClick');
+        Modal.error({ title: '错误', content: '串口连接失败' });
     }
     return (
         <div className="container">
