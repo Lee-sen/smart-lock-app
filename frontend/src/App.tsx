@@ -13,7 +13,7 @@ const App = () => (
   >
     {/* 注册路由 */}
     {/* <AuthRouter> */}
-      <Router />
+    <Router />
     {/* </AuthRouter> */}
     {/* 全局 Loaing */}
     {/* <Loading /> */}
